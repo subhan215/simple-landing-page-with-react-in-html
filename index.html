@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+
+    <script type="text/babel">
+        const root = document.getElementById("root");
+       
+        function MyHeader() {
+            return <div className="header">
+                <div className="logodiv">
+                    <img src={"./images/logo.png"} />
+                </div>
+                <div className="links" idname = "links">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Menu</li>
+                        <li>Awards</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div className="logindiv">
+                    <p>Log In / Registration  <span>|</span>  <span>Book Table</span> </p>
+
+                </div>
+                <div className="menudiv">
+                    <img src={"./images/menu.png"} width="70px" height="40px" />
+                    </div>
+               
+            
+
+            </div>
+        }
+        function MyBodydiv1() {
+            return <div className="bodydiv1">
+
+                <div className="bodydiv1p1">
+                    <div className="flavourdiv">
+                        <p>Chase the New Flavour</p>
+                        <img src={"./images/flavourimg.svg"} />
+                    </div>
+                    <h1>The Key To </h1>
+                    <h1>Fine Dining</h1>
+                    <p>Sit Tellus Lobortis Sed Senectus Vivamus Molestie. <br />
+                        Condimentum Volutpat Morbi Facilisis Quam Scelerisque <br />
+                        Sapien. Et, Penatibus Aliquam Amet Tellus</p>
+                    <button>Explore Menu</button>
+                </div>
+                <div className="bodydiv1p2">
+                    <img src={"./images/welcome.png"} />
+                </div>
+
+
+            </div>
+        }
+        function MainCom() {
+            return <div>
+                <MyHeader />
+                <MyBodydiv1 />
+            </div>
+        }
+        
+        ReactDOM.render(<MainCom />, root)
+    </script>
+
+    <div id="root">
+
+    </div>
+</body>
+
+
+</html>

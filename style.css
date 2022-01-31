@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0c0c0c;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.logodiv{
+    margin-left: 30px;
+}
+.logodiv img{
+    width: 150px;
+    height: 45px;
+}
+.links{
+    color: #ffffff;
+}
+.links ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    
+
+}
+.logindiv{
+    color: #ffffff;
+    margin-right: 30px;
+}
+.logindiv span{
+    margin-left: 10px;
+}
+.menudiv{
+    display: none;
+}
+.bodydiv1{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.bodydiv1p1{
+    color: #ffffff;
+}
+.bodydiv1 h1{
+    color: #ddca87;
+    font-size: 60px;
+    margin-top: 20px;
+}
+.bodydiv1 p{
+    color: #ffffff;
+    font-size: 20px;
+}
+.bodydiv1p1 p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bodydiv1p1 button{
+    padding: 15px;
+}
+.bodydiv1p2 img{
+   width: 400px;
+   height: 450px;
+
+}
+@media only screen and (max-width:950px){
+    .links{
+        display: none;
+    }
+    .menudiv{
+        display: block;
+    }
+    .bodydiv1{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .bodydiv1 h1{
+        font-size: 90px;
+    }
+    .bodydiv1p1{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-bottom: 50px;
+    }
+    .bodydiv1p2{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .bodydiv1p2 img{
+        width: 100% ;
+        height: 100%;
+    }
+}
+@media only screen and (max-width:650px){
+    .bodydiv1p1{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .bodydiv1p2{
+       margin-left: 40px;
+       margin-right: 40px;
+    }
+    .bodydiv1 h1{
+        font-size: 60px;
+    }
+    .logindiv{
+        display: none;
+    }
+}
+@media only screen and (max-width:450px){
+    .bodydiv1p1{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .bodydiv1p2{
+       margin-left: 25px;
+       margin-right: 25px;
+    }
+    .bodydiv1 h1{
+        font-size: 45px;
+    }
+}
